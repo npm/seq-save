@@ -1,6 +1,8 @@
 # save-seq
 
-Save database sequence #s to a configurable backend.
+Save [CouchDB sequence #s](http://docs.couchdb.org/en/2.1.1/api/database/changes.html#changes-feeds) to a configurable backend. This allows you to resume CouchDB replication from the point where you left off.
+
+_see also: [changes-stream](https://www.npmjs.com/package/changes-stream)._
 
 This is a replacement to [`seq-file`](https://github.com/npm/seq-file), adding
 support for additional backends.
