@@ -8,5 +8,5 @@ os:
   - linux
 notifications:
   email: false
-before_test:
+before_script:
   - docker-compose up -d --build
