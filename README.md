@@ -1,4 +1,4 @@
-# save-seq
+# seq-save
 
 Save [CouchDB sequence #s](http://docs.couchdb.org/en/2.1.1/api/database/changes.html#changes-feeds) to a configurable backend. This allows you to resume CouchDB replication from the point where you left off.
 
@@ -25,7 +25,7 @@ To save sequence files to the filesystem, simply provide the following
 configuration:
 
 ```js
-const SeqSave = require('save-seq')
+const SeqSave = require('seq-save')
 const seq = new SeqSave('my-sequence.seq', {
   type: 'file'
 })
@@ -39,7 +39,7 @@ _It's worth noting that `file` is the default backend, so you can also
 To save sequence files to etcd, simply provide the following configuration:
 
 ```js
-const Save = require('save-seq')
+const Save = require('seq-save')
 const seq = new SeqSave('my-sequence.seq', {
   type: 'etcd',
   host: 'http://127.0.0.1:2379'
