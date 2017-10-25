@@ -6,7 +6,8 @@
   "scripts": {
     "pretest": "",
     "test": "nyc mocha ./test/seq-save.js",
-    "posttest": "standard"
+    "posttest": "standard",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
