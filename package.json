@@ -1,0 +1,38 @@
+{
+  "name": "seq-save",
+  "version": "1.0.0",
+  "description": "save a sequence # to a configurable backend (etcd, files, etc.)",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "",
+    "test": "nyc mocha ./test/seq-save.js",
+    "posttest": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm/seq-save.git"
+  },
+  "keywords": [
+    "save",
+    "sequence",
+    "etcd",
+    "atomic"
+  ],
+  "author": "Ben Coe <ben@npmjs.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/npm/seq-save/issues"
+  },
+  "homepage": "https://github.com/npm/seq-save#readme",
+  "dependencies": {
+    "etcdjs": "^2.4.2",
+    "write-file-atomic": "^2.3.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0",
+    "standard": "^10.0.3",
+    "standard-version": "^4.2.0"
+  }
+}
