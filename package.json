@@ -1,6 +1,6 @@
 {
   "name": "seq-save",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "save a sequence # to a configurable backend (etcd, files, etc.)",
   "main": "index.js",
   "scripts": {
