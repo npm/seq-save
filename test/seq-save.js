@@ -1,6 +1,9 @@
+'use strict'
+
 /* global describe, it, beforeEach */
 
-const {readFileSync, unlinkSync} = require('fs')
+const readFileSync = require('fs').readFileSync
+const unlinkSync = require('fs').unlinkSync
 const etcd = require('etcdjs')(['http://127.0.0.1:2379'])
 const hash = require('../lib/utils/hash')
 

@@ -1,3 +1,5 @@
+'use strict'
+
 const backends = {
   file: require('./lib/backends/file'),
   etcd: require('./lib/backends/etcd')
