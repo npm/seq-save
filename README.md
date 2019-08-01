@@ -38,6 +38,8 @@ _It's worth noting that `file` is the default backend, so you can also
 
 To save sequence files to etcd, simply provide the following configuration:
 
+NOTE: if you specify a path in the etcd backend that begins with a leading dot character `.`, it will be removed.
+
 ```js
 const Save = require('seq-save')
 const seq = new SeqSave('my-sequence.seq', {
