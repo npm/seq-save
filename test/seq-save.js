@@ -5,7 +5,6 @@
 const readFileSync = require('fs').readFileSync
 const unlinkSync = require('fs').unlinkSync
 const etcd = require('etcdjs')(['http://127.0.0.1:2379'])
-const hash = require('../lib/utils/hash')
 
 const expect = require('chai').expect
 require('chai').should()
@@ -55,8 +54,8 @@ describe('seq-save', () => {
   })
 
   describe('etcd', () => {
-    const p1 = hash('./.sequence-1')
-    const p2 = hash('.sequence-2')
+    const p1 = './.sequence-1'
+    const p2 = '.sequence-2'
 
     beforeEach((done) => {
       etcd.del(p1, (_err) => {
