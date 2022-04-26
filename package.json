@@ -26,14 +26,14 @@
   },
   "homepage": "https://github.com/npm/seq-save#readme",
   "dependencies": {
-    "etcdjs": "^2.4.2",
+    "@npmcorp/etcdjs": "^2.4.4",
     "write-file-atomic": "^2.3.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^4.0.1",
-    "nyc": "^11.3.0",
-    "standard": "^10.0.3",
-    "standard-version": "^4.2.0"
+    "nyc": "^15.1.0",
+    "standard": "^17.0.0",
+    "standard-version": "^9.3.2"
   }
 }
