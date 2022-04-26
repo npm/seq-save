@@ -4,7 +4,7 @@
 
 const readFileSync = require('fs').readFileSync
 const unlinkSync = require('fs').unlinkSync
-const etcd = require('etcdjs')(['http://127.0.0.1:2379'])
+const etcd = require('@npmcorp/etcdjs')(['http://127.0.0.1:2379'])
 
 const expect = require('chai').expect
 require('chai').should()

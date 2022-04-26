@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/npm/seq-save#readme",
   "dependencies": {
-    "etcdjs": "^2.4.2",
+    "@npmcorp/etcdjs": "^2.4.4",
     "write-file-atomic": "^2.3.0"
   },
   "devDependencies": {
